@@ -23,6 +23,24 @@
 
 📄 Instrucciones detalladas: **[INSTALL.md](INSTALL.md)**
 
+## 🔒 Verifica que el archivo es auténtico
+
+Como esto instala un driver, **descárgalo solo desde la [pestaña Releases oficial](../../releases/latest) de este repositorio** — nunca de webs de terceros, que podrían colar una versión modificada con malware.
+
+Para asegurarte de que el `.exe` que has bajado es exactamente el nuestro (no manipulado), comprueba su huella **SHA-256**. Abre PowerShell en la carpeta de descargas y ejecuta:
+
+```powershell
+Get-FileHash .\Instalar-n52te.exe -Algorithm SHA256
+```
+
+El resultado debe coincidir **exactamente** con este (también en el archivo [`Instalar-n52te.exe.sha256`](Instalar-n52te.exe.sha256)):
+
+```
+8946926B10325A9F095E3BE3E661A0B87E46BC0B340333D570557E2239A7EB18
+```
+
+Si no coincide, **no lo ejecutes**: el archivo no es el original.
+
 ---
 
 ## ❓ ¿Por qué hace falta esto?
