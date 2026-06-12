@@ -1,0 +1,17 @@
+# El instalador se distribuye como Release, no en el repo
+# (descomenta si NO quieres versionar el .exe en el repo)
+# *.exe
+
+# Temporales / build
+*.tmp
+*.log
+*.obj
+*.pdb
+installer_build/
+tools/
+extracted/
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
