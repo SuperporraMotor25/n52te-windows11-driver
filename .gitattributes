@@ -1,0 +1,9 @@
+# Asegura que el instalador se trate como binario (git nunca lo modifica)
+*.exe binary
+*.png binary
+*.ico binary
+
+# Normaliza finales de línea en los textos
+*.md text eol=lf
+*.txt text
+LICENSE text eol=lf
