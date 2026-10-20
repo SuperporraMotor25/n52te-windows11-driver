@@ -34,7 +34,7 @@ Get-FileHash .\Instalar-n52te.exe -Algorithm SHA256
 The result must match this **exactly** (also published in [`Instalar-n52te.exe.sha256`](Instalar-n52te.exe.sha256)):
 
 ```
-8946926B10325A9F095E3BE3E661A0B87E46BC0B340333D570557E2239A7EB18
+D599C1256F4A61BBE9E09EC89C7D660EEE047FAA8F4C02CE2F64ABC4E2A7377B
 ```
 
 If it doesn't match, **don't run it**. You can also upload the file to [VirusTotal](https://www.virustotal.com/) and scan it yourself before running.
@@ -51,12 +51,18 @@ The **Belkin n52te** (and its twin, the **Razer Nostromo n52te**) is a legendary
 - **🖱️ Visual editor**: the 14 buttons + thumb pad + D-pad drawn with the device's real shape. Click a button, choose what it does, save — applied instantly.
 - **⌨️ Each button can be**: a key (including F13–F24, which conflict with nothing), a combo/macro (`Ctrl+C`, `Alt+Tab`…), typed text, or launching a program or website.
 - **🔍 Identify mode**: press a physical button and it gets selected on screen.
+- **🎓 Learn keys**: if your keypad still has a custom profile stored on it (red/green/blue mode, or any non-default layout), press **Learn keys** (*Aprender teclas*) and then each button once. The editor learns which key every button sends and recognises your unit, even if it reports a different USB ID.
 - **🚀 Optional start with Windows**, running in the background.
 - **📦 One-click installer** that cleans up old Belkin driver leftovers, installs the driver and leaves everything working.
 
 ## 🕹️ Original Belkin n52 (non-TE) owners
 
-Experimental: the remapper filters by Belkin's USB vendor ID (`VID_050D`), not only the n52te's product ID, so the **original Nostromo n52** (black/grey/orange) should be picked up too, as long as it types its default keys (Tab/QWE/ASD…) when plugged in. Use the editor's **Identify** mode to check in seconds. If your unit behaves differently, please [open an issue](../../issues) — feedback welcome.
+Experimental: the remapper filters by Belkin's USB vendor ID (`VID_050D`), not only the n52te's product ID, so the **original Nostromo n52** (black/grey/orange) should be picked up too. If it types different keys from the default ones (Tab/QWE/ASD…), or the editor says the remapper doesn't recognise it, use **Learn keys** (*Aprender teclas*) in the editor. If your unit still behaves differently, please [open an issue](../../issues) and paste the text of the remapper window. Feedback welcome.
+
+## 🆘 "I remapped a button but it still types the old key"
+
+1. **Test outside the editor**: while the editor window is focused, the n52te types raw on purpose. Click another window (e.g. Notepad) first.
+2. Look at the line under the keypad drawing. If it says the remapper **does not recognise** your n52te, press **Learn keys** (*Aprender teclas*) and press each button when asked. This also covers keypads that still carry an old onboard profile (red/green/blue modes).
 
 ## 🧩 Compatibility
 
@@ -116,7 +122,7 @@ Get-FileHash .\Instalar-n52te.exe -Algorithm SHA256
 El resultado debe coincidir **exactamente** con este (también en el archivo [`Instalar-n52te.exe.sha256`](Instalar-n52te.exe.sha256)):
 
 ```
-8946926B10325A9F095E3BE3E661A0B87E46BC0B340333D570557E2239A7EB18
+D599C1256F4A61BBE9E09EC89C7D660EEE047FAA8F4C02CE2F64ABC4E2A7377B
 ```
 
 Si no coincide, **no lo ejecutes**. También puedes subir el archivo a [VirusTotal](https://www.virustotal.com/) y analizarlo tú mismo antes de ejecutarlo.
@@ -133,12 +139,18 @@ El **Belkin n52te** (y su gemelo **Razer Nostromo n52te**) es un mítico keypad 
 - **🖱️ Editor visual**: los 14 botones + pulgar + cruceta dibujados con la forma real del dispositivo. Haz clic en un botón, elige qué hace y guarda — se aplica al instante.
 - **⌨️ Cada botón puede ser**: una tecla (incluso F13–F24 sin conflictos), una combinación/macro (`Ctrl+C`, `Alt+Tab`…), escribir un texto, o abrir un programa o web.
 - **🔍 Identificar**: pulsa un botón físico y se selecciona solo en el editor.
+- **🎓 Aprender teclas**: si tu keypad conserva un perfil grabado (modo rojo/verde/azul o cualquier distribución que no sea la de fábrica), pulsa **Aprender teclas** y luego cada botón una vez. El editor aprende qué tecla manda cada botón y reconoce tu unidad aunque tenga otro ID USB.
 - **🚀 Inicio con Windows** opcional, en segundo plano.
 - **📦 Instalador con un clic** que limpia restos del driver antiguo de Belkin, instala el driver y deja todo funcionando.
 
 ## 🕹️ ¿Tienes el Belkin n52 original (no TE)?
 
-Experimental: el remapeador filtra por el vendor ID USB de Belkin (`VID_050D`), no solo por el product ID del n52te, así que el **Nostromo n52 original** (negro/gris/naranja) debería detectarse también, siempre que teclee sus teclas de fábrica (Tab/QWE/ASD…) al conectarlo. Usa el modo **Identificar** del editor para comprobarlo en segundos. Si tu unidad se comporta distinto, [abre una issue](../../issues).
+Experimental: el remapeador filtra por el vendor ID USB de Belkin (`VID_050D`), no solo por el product ID del n52te, así que el **Nostromo n52 original** (negro/gris/naranja) debería detectarse también. Si teclea otras teclas distintas de las de fábrica (Tab/QWE/ASD…) o el editor dice que el remapeador no lo reconoce, usa **Aprender teclas**. Si aun así se comporta distinto, [abre una issue](../../issues) y pega el texto de la ventana del remapeador.
+
+## 🆘 «Reasigné un botón y sigue mandando la tecla de antes»
+
+1. **Prueba fuera del editor**: con la ventana del editor delante, el n52te escribe en crudo a propósito. Haz clic antes en otra ventana (por ejemplo el Bloc de notas).
+2. Mira la línea de debajo del dibujo del keypad. Si dice que el remapeador **no reconoce** tu n52te, pulsa **Aprender teclas** y ve pulsando cada botón cuando te lo pida. Esto también resuelve los keypads que conservan un perfil antiguo grabado (modos rojo/verde/azul).
 
 ## 🧩 Compatibilidad
 

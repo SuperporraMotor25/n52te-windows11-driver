@@ -60,7 +60,7 @@ La **primera vez** que se instala el driver, Windows necesita **reiniciar** para
 | Síntoma | Solución |
 |---|---|
 | El editor dice *"el remapeador no está abierto"* | Abre el acceso directo **Remapeador n52te**, o marca *"Iniciar con Windows"* y reinicia. |
-| Asigné una tecla y no cambia | Recuerda hacer clic **fuera** del editor antes de probar el botón. |
+| Asigné una tecla y no cambia | Recuerda hacer clic **fuera** del editor antes de probar el botón. Si bajo el dibujo pone que el remapeador **no reconoce** tu n52te, o tu keypad manda otras teclas (perfil rojo/verde/azul grabado), pulsa **Aprender teclas** en el editor. |
 | *"Acceso denegado"* al guardar | No debería pasar (la config va a `%ProgramData%`). Si ocurre, ejecuta el editor como administrador una vez. |
 | El n52te no aparece | Comprueba que esté conectado y que el driver cargó: reinicia tras la instalación. |
 | El teclado se comportó raro al instalar | Reinicia el equipo; el estado se reinicia limpio. |
